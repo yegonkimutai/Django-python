@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 def greet(request):
-    return HttpResponse('Hello World')
+    x = 1
+    y = 3
+    return render(request, 'hello.html', {'name': 'Mosh'})
